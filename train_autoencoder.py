@@ -14,12 +14,12 @@ data = np.array(docX)
 
 encoding_dim = 16
 input_img = Input(shape=(data.shape[1],))
-encoded = Dense(encoding_dim, activation='relu')(input_img)
+encoded = Dense(encoding_dim, activation='tanh')(input_img)
 
-decoded = Dense(data.shape[1], activation='relu')(encoded)
+decoded = Dense(data.shape[1], activation='tanh')(encoded)
 
 autoencoder = Model(input=input_img, output=decoded)
-autoencoder.compile(optimizer='adam', loss='mean_squared_error')
+autoencoder.compile(optimizer='adam', loss='mae')
 
 # this model maps an input to its encoded representation
 encoder = Model(input=input_img, output=encoded)
@@ -40,26 +40,26 @@ decoded_imgs = decoder.predict(encoded_imgs)
 
 import matplotlib.pyplot as plt
 
-n = 10  # how many windows we will display
+n = 4  # how many windows we will display
 plt.figure(figsize=(20, 4))
 for i in range(n):
     # display original
     ax = plt.subplot(3, n, i + 1)
     plt.plot(data[i])
-    ax.get_xaxis().set_visible(False)
-    ax.get_yaxis().set_visible(False)
+    # ax.get_xaxis().set_visible(False)
+    # ax.get_yaxis().set_visible(False)
 
     # display reconstruction
     ax = plt.subplot(3, n, i + 1 + n)
     plt.plot(decoded_imgs[i])
-    ax.get_xaxis().set_visible(False)
-    ax.get_yaxis().set_visible(False)
+    # ax.get_xaxis().set_visible(False)
+    # ax.get_yaxis().set_visible(False)
 
     # display reconstruction
     ax = plt.subplot(3, n, i + 1 + 2*n)
     plt.plot(X[0, i*win_size:i*win_size + win_size])
     plt.plot(X[1, i*win_size:i*win_size + win_size])
-    ax.get_xaxis().set_visible(False)
-    ax.get_yaxis().set_visible(False)
+    # ax.get_xaxis().set_visible(False)
+    # ax.get_yaxis().set_visible(False)
 
 plt.show()
