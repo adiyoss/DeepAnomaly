@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14a2930c-6acf-483f-a242-a695d1124446" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/ECG5000_TEST_PHASE_1_CONTINUOUS_SIGNAL_1.pkl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/ECG5000_TEST_PHASE_2_CONTINUOUS_SIGNAL_1.pkl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/ECG5000_TRAIN_PHASE_2_CONTINUOUS_SIGNAL_1.pkl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_preparation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/train_autoencoder.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/train.py" afterPath="$PROJECT_DIR$/train_normal_model.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/results/model_1.net" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/normal_model_training/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/normal_model_training/encdec_lstm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/normal_model_training/encdec_lstm_test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train_normal_model.py" afterPath="$PROJECT_DIR$/normal_model_training/train_normal_model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/model.net" afterPath="$PROJECT_DIR$/results/model.net" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/anomaly_detect.iml" afterPath="$PROJECT_DIR$/.idea/anomaly_detect.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/ECG5000_TRAIN_PHASE_2_CONTINUOUS_SIGNAL_1.pkl" afterPath="$PROJECT_DIR$/data/ECG5000_TRAIN_PHASE_2_CONTINUOUS_SIGNAL_1.pkl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_autoencoder.py" afterPath="$PROJECT_DIR$/train_autoencoder.py" />
     </list>
     <ignored path="anomaly_detect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,9 +25,11 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/anomaly_detect$encdec_lstm.coverage" NAME="encdec_lstm Coverage Results" MODIFIED="1466351275836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/normal_model_training" />
+    <SUITE FILE_PATH="coverage/anomaly_detect$encdec_lstm_test.coverage" NAME="encdec_lstm_test Coverage Results" MODIFIED="1466351883284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/normal_model_training" />
     <SUITE FILE_PATH="coverage/anomaly_detect$test.coverage" NAME="test Coverage Results" MODIFIED="1465567535165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/anomaly_detect$train.coverage" NAME="train Coverage Results" MODIFIED="1465567223421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/anomaly_detect$train_autoencoder.coverage" NAME="train_autoencoder Coverage Results" MODIFIED="1465569257093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/anomaly_detect$train_autoencoder.coverage" NAME="train_autoencoder Coverage Results" MODIFIED="1466352148073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/anomaly_detect$data_preparation.coverage" NAME="data_preparation Coverage Results" MODIFIED="1465553381991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -41,10 +42,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="train_normal_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train_normal_model.py">
+        <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+            <state relative-caret-position="105">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="encdec_lstm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/normal_model_training/encdec_lstm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -55,8 +68,8 @@
       <file leaf-file-name="train_autoencoder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-506">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -77,11 +90,21 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
+            <state relative-caret-position="-165">
               <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="encdec_lstm_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/normal_model_training/encdec_lstm_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="42" column="43" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,6 +131,8 @@
         <option value="$PROJECT_DIR$/data_preparation.py" />
         <option value="$PROJECT_DIR$/train_auto_encoder.py" />
         <option value="$PROJECT_DIR$/train_normal_model.py" />
+        <option value="$PROJECT_DIR$/normal_model_training/encdec_lstm_test.py" />
+        <option value="$PROJECT_DIR$/normal_model_training/encdec_lstm.py" />
         <option value="$PROJECT_DIR$/train_autoencoder.py" />
       </list>
     </option>
@@ -186,6 +211,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anomaly_detect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepAnomaly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anomaly_detect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepAnomaly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="normal_model_training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anomaly_detect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeepAnomaly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -201,29 +268,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/normal_model_training" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/results" />
+      <recent name="$PROJECT_DIR$/normal_model_training" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
   <component name="RunManager" selected="Python.train_autoencoder">
-    <configuration default="false" name="reader" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="anomaly_detect" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reader.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,7 +291,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="anomaly_detect" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_normal_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/normal_model_training/train_normal_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -260,24 +314,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="data_preparation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="anomaly_detect" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preparation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="train_autoencoder" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,6 +328,42 @@
       <module name="anomaly_detect" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_autoencoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="encdec_lstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/normal_model_training" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="anomaly_detect" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/normal_model_training/encdec_lstm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="encdec_lstm_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/normal_model_training" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="anomaly_detect" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/normal_model_training/encdec_lstm_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -505,19 +577,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.reader" />
-      <item index="1" class="java.lang.String" itemvalue="Python.train" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.data_preparation" />
-      <item index="4" class="java.lang.String" itemvalue="Python.train_autoencoder" />
+      <item index="0" class="java.lang.String" itemvalue="Python.train" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.train_autoencoder" />
+      <item index="3" class="java.lang.String" itemvalue="Python.encdec_lstm" />
+      <item index="4" class="java.lang.String" itemvalue="Python.encdec_lstm_test" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.train_autoencoder" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.train" />
-        <item index="3" class="java.lang.String" itemvalue="Python.data_preparation" />
-        <item index="4" class="java.lang.String" itemvalue="Python.reader" />
+        <item index="1" class="java.lang.String" itemvalue="Python.encdec_lstm_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.encdec_lstm" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -535,24 +607,32 @@
       <option name="presentableId" value="Default" />
       <updated>1464867747623</updated>
     </task>
+    <task id="LOCAL-00001" summary="added encoder code for dimension reduction phase">
+      <created>1465570823741</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1465570823741</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19951534" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22374798" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38897893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38772213" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4764992" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4749596" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -572,6 +652,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added encoder code for dimension reduction phase" />
+    <option name="LAST_COMMIT_MESSAGE" value="added encoder code for dimension reduction phase" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -586,7 +670,7 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/train_normal_model.py</url>
+          <url>file://$PROJECT_DIR$/normal_model_training/train_normal_model.py</url>
           <line>69</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -607,7 +691,121 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/train_normal_model.py">
+    <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_autoencoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="21" />
@@ -635,7 +833,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_normal_model.py">
+    <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="40" column="22" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
@@ -663,7 +861,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_normal_model.py">
+    <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -705,21 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_preparation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/keras/engine/training.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="425" column="33" selection-start-line="425" selection-start-column="33" selection-end-line="425" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="973" column="4" selection-start-line="973" selection-start-column="4" selection-end-line="973" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="56" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,23 +936,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="932" column="4" selection-start-line="932" selection-start-column="4" selection-end-line="932" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_normal_model.py">
+    <entry file="file://$PROJECT_DIR$/data_preparation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
+        <state relative-caret-position="-165">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -775,10 +965,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/keras/layers/wrappers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normal_model_training/train_normal_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normal_model_training/encdec_lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/normal_model_training/encdec_lstm_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="42" column="43" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train_autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="165">
+          <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

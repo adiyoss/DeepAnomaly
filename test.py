@@ -13,7 +13,7 @@ maxlen = 140
 batch_size = 32
 early_stopping_patience = 5
 save_dir = 'results/'
-model_name = 'model.net'
+model_name = 'model_1.net'
 val_percentage = 0.15
 
 path_test = 'data/ECG5000_TEST_CONTINUOUS_SIGNAL_1.pkl'
