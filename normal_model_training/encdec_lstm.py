@@ -20,7 +20,7 @@ def train_normal_model():
     early_stopping_patience = 5
     save_dir = '../results/'
     model_name = 'model.net'
-    val_percentage = 0.15
+    val_percentage = 0.1
 
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
@@ -54,9 +54,10 @@ def train_normal_model():
     model.add(TimeDistributed(Dense(1)))
 
     model.compile(loss='mae', optimizer='adam')
+    model.summary()
 
-    model.fit(X, y, batch_size=batch_size, nb_epoch=500, validation_split=val_percentage,
-              callbacks=[check_pointer, early_stop])
+    model.fit(X, y, batch_size=batch_size, nb_epoch=50, validation_split=val_percentage,
+              callbacks=[check_pointer])
 
     return model
 

@@ -14,7 +14,7 @@ batch_size = 32
 early_stopping_patience = 5
 save_dir = '../results/'
 model_name = 'model.net'
-val_percentage = 0.15
+val_percentage = 0.1
 
 path_test = '../data/ECG5000_TEST_CONTINUOUS_SIGNAL_1.pkl'
 db = reader.read_data(path_test)
@@ -40,7 +40,9 @@ model.add(LSTM(hidden_size, return_sequences=True))
 model.add(TimeDistributed(Dense(1)))
 
 model.load_weights(save_dir + model_name)
+
 model.compile(loss='mae', optimizer='adam')
+model.summary()
 
 prediction = model.predict(X, batch_size, verbose=1, )
 prediction = prediction.flatten()
