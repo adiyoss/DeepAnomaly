@@ -1,0 +1,3 @@
+S'/Users/yossiadi/Projects/anomaly_detect/files/encodings.pkl'
+p1
+.
